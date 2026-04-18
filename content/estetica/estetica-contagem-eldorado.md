@@ -1,5 +1,5 @@
 ---
 layout: pseo
-type: estetica
+type: pseo
 Slug: estetica-contagem-eldorado
 ---
