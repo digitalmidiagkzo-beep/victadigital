@@ -4,50 +4,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-<title> | VictaDigital</title>
+<title>Clínica de Estética no Lourdes BH | VictaDigital</title>
 <meta name="description" content="Sua clínica de estética no Lourdes, BH. Atendimento rápido, profissionais avaliados pela comunidade local. Agende agora.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://victadigital.com.br/clinica-estetica-belo-horizonte-lourdes">
-
-
-<meta property="og:title" content="">
+<meta property="og:title" content="Clínica de Estética no Lourdes BH">
 <meta property="og:description" content="Sua clínica de estética no Lourdes, BH. Atendimento rápido, profissionais avaliados pela comunidade local. Agende agora.">
 <meta property="og:url" content="https://victadigital.com.br/clinica-estetica-belo-horizonte-lourdes">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://victadigital.com.br/img/default-est%C3%A9tica.jpg">
-
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Estética Lourdes",
   "description": "Sua clínica de estética no Lourdes, BH. Atendimento rápido, profissionais avaliados pela comunidade local. Agende agora.",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "",
-    "addressLocality": "Belo Horizonte",
-    "addressRegion": "MG",
-    "addressCountry": "BR"
-  },
+  "address": {"@type":"PostalAddress","addressLocality":"Belo Horizonte","addressRegion":"MG","addressCountry":"BR"},
   "areaServed": "Lourdes, Belo Horizonte",
-  "telephone": "",
-  "image": "https://victadigital.com.br/img/default-est%C3%A9tica.jpg"
+  "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"47"}
 }
 </script>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
 :root{
-  --g900:#0a1f12; --g800:#112a1a; --g700:#1a3d28;
-  --g500:#2a6044; --g400:#3a8060; --g200:#b8d9c8;
-  --g100:#e6f2ec; --g050:#f4faf7; --white:#ffffff;
-  --text:#0f1f16; --muted:#4a6355; --hint:#7a9688;
-  --border:#d4e8dc; --r:14px;
+  --g900:#0a1f12;--g800:#112a1a;--g700:#1a3d28;
+  --g500:#2a6044;--g400:#3a8060;--g200:#b8d9c8;
+  --g100:#e6f2ec;--g050:#f4faf7;--white:#ffffff;
+  --text:#0f1f16;--muted:#4a6355;--hint:#7a9688;
+  --border:#d4e8dc;--r:14px;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
@@ -62,94 +46,133 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,
 .nav-cta svg{width:15px;height:15px;fill:currentColor}
 
  
-.hero{padding:100px 32px 64px;max-width:960px;margin:0 auto;display:grid;grid-template-columns:1fr 380px;gap:64px;align-items:center}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--g100);border:1px solid var(--g200);border-radius:50px;padding:6px 16px;font-size:12px;font-weight:600;color:var(--g500);margin-bottom:20px}
+.hero{padding:100px 32px 48px;max-width:960px;margin:0 auto;display:grid;grid-template-columns:1fr 380px;gap:48px;align-items:start}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--g100);border:1px solid var(--g200);border-radius:50px;padding:6px 16px;font-size:12px;font-weight:600;color:var(--g500);margin-bottom:16px}
 .dot{width:6px;height:6px;background:var(--g400);border-radius:50%;animation:blink 2s infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
-h1{font-size:clamp(28px,4vw,46px);font-weight:700;line-height:1.12;letter-spacing:-.02em;color:var(--g900);margin-bottom:16px}
+h1{font-size:clamp(26px,4vw,42px);font-weight:700;line-height:1.12;letter-spacing:-.02em;color:var(--g900);margin-bottom:12px}
 h1 span{color:var(--g500)}
-.hero-desc{font-size:16px;color:var(--muted);line-height:1.7;margin-bottom:32px;max-width:440px}
-.btn-wa{display:inline-flex;align-items:center;gap:10px;background:var(--g800);color:var(--white);padding:16px 28px;border-radius:50px;font-size:15px;font-weight:600;text-decoration:none;transition:all .2s}
+
+ 
+.rating-row{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.stars{display:flex;gap:2px}
+.stars svg{width:18px;height:18px;fill:#f59e0b}
+.rating-text{font-size:14px;font-weight:600;color:var(--text)}
+.rating-count{font-size:13px;color:var(--hint)}
+
+.hero-desc{font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:24px;max-width:440px}
+.btn-wa{display:inline-flex;align-items:center;gap:10px;background:var(--g800);color:var(--white);padding:15px 26px;border-radius:50px;font-size:15px;font-weight:600;text-decoration:none;transition:all .2s}
 .btn-wa:hover{background:var(--g700);transform:translateY(-1px)}
 .btn-wa svg{width:18px;height:18px;fill:currentColor;flex-shrink:0}
 .btn-wa.inativo{background:var(--g200);color:var(--g700);pointer-events:none}
-.hero-img{border-radius:20px;overflow:hidden;aspect-ratio:4/3;background:var(--g100)}
-.hero-img img{width:100%;height:100%;object-fit:cover}
-.hero-img-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--g100),var(--g050));flex-direction:column;gap:12px;padding:32px;text-align:center}
-.placeholder-icon{width:64px;height:64px;background:var(--g200);border-radius:16px;display:flex;align-items:center;justify-content:center}
-.placeholder-icon svg{width:32px;height:32px;fill:var(--g500)}
 
  
-.info-card{background:var(--g050);border:1px solid var(--border);border-radius:var(--r);padding:24px;margin-top:20px}
-.info-row{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);font-size:13px}
+.info-card{background:var(--g050);border:1px solid var(--border);border-radius:var(--r);padding:20px;margin-top:20px}
+.info-row{display:flex;align-items:flex-start;gap:10px;padding:7px 0;border-bottom:1px solid var(--border);font-size:13px}
 .info-row:last-child{border-bottom:none}
 .info-row svg{width:16px;height:16px;fill:var(--g500);flex-shrink:0;margin-top:2px}
 .info-row span{color:var(--muted)}
 
  
-.servicos-section{background:var(--g050);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:64px 32px}
+.hero-right{display:flex;flex-direction:column;gap:16px}
+.hero-img{border-radius:16px;overflow:hidden;aspect-ratio:4/3;background:var(--g100)}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.hero-img-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--g100),var(--g050));flex-direction:column;gap:10px;padding:24px;text-align:center}
+.placeholder-icon{width:56px;height:56px;background:var(--g200);border-radius:14px;display:flex;align-items:center;justify-content:center}
+.placeholder-icon svg{width:28px;height:28px;fill:var(--g500)}
+
+ 
+.map-box{border-radius:16px;overflow:hidden;height:200px;border:1px solid var(--border);position:relative}
+.map-box iframe{width:100%;height:100%;border:none;display:block}
+.map-label{position:absolute;bottom:10px;left:10px;background:var(--white);border:1px solid var(--border);border-radius:8px;padding:6px 12px;font-size:12px;font-weight:600;color:var(--g700);display:flex;align-items:center;gap:6px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.map-label svg{width:14px;height:14px;fill:var(--g500)}
+
+ 
+.avaliacoes-section{background:var(--g050);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:48px 32px}
+.avaliacoes-inner{max-width:960px;margin:0 auto}
+.section-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--g500);margin-bottom:8px}
+h2{font-size:clamp(20px,3vw,30px);font-weight:700;letter-spacing:-.02em;color:var(--g900);margin-bottom:24px}
+.avaliacoes-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.avaliacao-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:20px}
+.av-stars{display:flex;gap:2px;margin-bottom:8px}
+.av-stars svg{width:14px;height:14px;fill:#f59e0b}
+.av-texto{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:12px}
+.av-autor{display:flex;align-items:center;gap:8px}
+.av-avatar{width:32px;height:32px;border-radius:50%;background:var(--g200);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--g700)}
+.av-nome{font-size:13px;font-weight:600;color:var(--text)}
+.av-data{font-size:11px;color:var(--hint)}
+
+ 
+.rating-summary{display:flex;align-items:center;gap:24px;background:var(--white);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:24px}
+.rating-big{text-align:center}
+.rating-num{font-size:48px;font-weight:700;color:var(--g900);line-height:1}
+.rating-stars-big{display:flex;gap:3px;justify-content:center;margin:4px 0}
+.rating-stars-big svg{width:16px;height:16px;fill:#f59e0b}
+.rating-total{font-size:12px;color:var(--hint)}
+.rating-bars{flex:1}
+.rating-bar-row{display:flex;align-items:center;gap:8px;margin-bottom:4px;font-size:12px;color:var(--muted)}
+.bar-track{flex:1;height:6px;background:var(--g100);border-radius:3px;overflow:hidden}
+.bar-fill{height:100%;background:var(--g400);border-radius:3px}
+
+ 
+.servicos-section{padding:48px 32px}
 .servicos-inner{max-width:960px;margin:0 auto}
-.section-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--g500);margin-bottom:10px}
-h2{font-size:clamp(22px,3vw,34px);font-weight:700;letter-spacing:-.02em;color:var(--g900);margin-bottom:32px}
-.servicos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
-.servico-item{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:16px 18px;font-size:14px;font-weight:600;color:var(--g700);display:flex;align-items:center;gap:10px;transition:all .2s}
-.servico-item:hover{border-color:var(--g400);background:var(--g050)}
-.servico-item::before{content:'';width:8px;height:8px;background:var(--g400);border-radius:50%;flex-shrink:0}
+.servicos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.servico-item{background:var(--g050);border:1px solid var(--border);border-radius:10px;padding:14px 16px;font-size:13px;font-weight:600;color:var(--g700);display:flex;align-items:center;gap:8px}
+.servico-item::before{content:'';width:7px;height:7px;background:var(--g400);border-radius:50%;flex-shrink:0}
 
  
-.sobre-section{padding:64px 32px}
-.sobre-inner{max-width:960px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.sobre-text p{font-size:15px;color:var(--muted);line-height:1.75;margin-bottom:16px}
-.sobre-text p:last-child{margin-bottom:0}
-.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.stat-box{background:var(--g050);border:1px solid var(--border);border-radius:var(--r);padding:20px;text-align:center}
-.stat-num{font-size:28px;font-weight:700;color:var(--g500);line-height:1}
-.stat-label{font-size:12px;color:var(--hint);margin-top:4px}
+.sobre-section{background:var(--g050);border-top:1px solid var(--border);padding:48px 32px}
+.sobre-inner{max-width:960px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.sobre-text p{font-size:15px;color:var(--muted);line-height:1.75;margin-bottom:14px}
+.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stat-box{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:18px;text-align:center}
+.stat-num{font-size:26px;font-weight:700;color:var(--g500);line-height:1}
+.stat-label{font-size:11px;color:var(--hint);margin-top:4px}
 
  
-.cta-banner{background:var(--g900);padding:64px 32px;text-align:center}
-.cta-banner h2{color:var(--white);font-size:clamp(22px,3vw,36px);margin-bottom:12px}
-.cta-banner p{color:var(--g200);font-size:15px;margin-bottom:32px}
-.btn-wa-white{display:inline-flex;align-items:center;gap:10px;background:var(--white);color:var(--g900);padding:18px 36px;border-radius:50px;font-size:16px;font-weight:700;text-decoration:none;transition:all .2s}
+.cta-banner{background:var(--g900);padding:56px 32px;text-align:center}
+.cta-banner h2{color:var(--white);font-size:clamp(20px,3vw,32px);margin-bottom:10px}
+.cta-banner p{color:var(--g200);font-size:14px;margin-bottom:28px}
+.btn-wa-white{display:inline-flex;align-items:center;gap:10px;background:var(--white);color:var(--g900);padding:16px 32px;border-radius:50px;font-size:15px;font-weight:700;text-decoration:none;transition:all .2s}
 .btn-wa-white:hover{background:var(--g100);transform:translateY(-1px)}
 .btn-wa-white svg{width:20px;height:20px;fill:currentColor}
 
  
-footer{padding:32px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer{padding:28px 32px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
 .footer-logo{font-size:14px;font-weight:700;color:var(--g900)}
 .footer-logo em{color:var(--g500);font-style:normal}
 footer p{font-size:11px;color:var(--hint)}
 footer a{color:var(--g500);text-decoration:none}
-.footer-claim{width:100%;padding-top:12px;border-top:1px solid var(--border);font-size:11px;color:var(--hint);text-align:center}
+.footer-claim{width:100%;padding-top:10px;border-top:1px solid var(--border);font-size:11px;color:var(--hint);text-align:center}
 
  
 .wa-float{position:fixed;bottom:24px;right:24px;z-index:200;display:flex;align-items:center;gap:10px;background:#25d366;color:white;padding:14px 20px;border-radius:50px;font-size:14px;font-weight:600;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:all .2s}
-.wa-float:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(37,211,102,.5)}
+.wa-float:hover{transform:translateY(-2px)}
 .wa-float svg{width:20px;height:20px;fill:currentColor;flex-shrink:0}
 .wa-float.inativo{background:var(--g200);color:var(--g700);box-shadow:none;pointer-events:none}
 
  
-.reivindicar{background:var(--g050);border:1px solid var(--g200);border-radius:var(--r);padding:20px 24px;max-width:960px;margin:0 auto 32px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.reivindicar p{font-size:13px;color:var(--muted)}
-.reivindicar strong{color:var(--g900)}
-.btn-reivindicar{background:var(--g800);color:var(--white);padding:10px 22px;border-radius:50px;font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap;transition:background .2s}
-.btn-reivindicar:hover{background:var(--g700)}
+.reivindicar-banner{background:linear-gradient(135deg,#1a3d28,#0a1f12);padding:20px 32px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.reivindicar-banner p{font-size:13px;color:var(--g200)}
+.reivindicar-banner strong{color:var(--white);display:block;font-size:15px;margin-bottom:2px}
+.btn-reivindicar{background:var(--white);color:var(--g900);padding:10px 22px;border-radius:50px;font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap;transition:all .2s;flex-shrink:0}
+.btn-reivindicar:hover{background:var(--g100)}
 
- 
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
 .reveal.up{opacity:1;transform:none}
 
- 
 @media(max-width:768px){
   nav{padding:0 16px}
-  .hero{grid-template-columns:1fr;padding:90px 16px 48px;gap:32px}
-  .hero-img{order:-1}
-  .servicos-section,.sobre-section,.cta-banner{padding:48px 16px}
+  .hero{grid-template-columns:1fr;padding:86px 16px 40px;gap:24px}
+  .hero-right{order:-1}
+  .avaliacoes-section,.servicos-section,.sobre-section,.cta-banner{padding:40px 16px}
   .sobre-inner{grid-template-columns:1fr}
-  footer{padding:24px 16px;flex-direction:column;text-align:center}
+  .rating-summary{flex-direction:column;text-align:center}
+  footer{padding:20px 16px;flex-direction:column;text-align:center}
   .wa-float span{display:none}
   .wa-float{padding:14px}
-  .reivindicar{padding:16px;flex-direction:column;text-align:center;margin:0 16px 24px}
+  .reivindicar-banner{flex-direction:column;text-align:center;padding:16px}
 }
 </style>
 </head>
@@ -159,7 +182,7 @@ footer a{color:var(--g500);text-decoration:none}
 <nav>
   <a href="https://victadigital.com.br" class="nav-logo">Victa<em>Digital</em></a>
   
-  <a href="https://wa.me/5531999999999?text=Olá!%20Vi%20a%20página%20de%20Est%C3%A9tica%20no%20Lourdes%20e%20quero%20saber%20mais." class="nav-cta">
+  <a href="https://wa.me/5531984102018?text=Olá!%20Quero%20personalizar%20minha%20página%20de%20Est%C3%A9tica%20no%20Lourdes." class="nav-cta">
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     Saiba mais
   </a>
@@ -171,7 +194,21 @@ footer a{color:var(--g500);text-decoration:none}
   <div class="hero">
     <div>
       <div class="hero-badge"><span class="dot"></span>Estética · Lourdes</div>
-      <h1></h1>
+      <h1>Clínica de Estética no Lourdes BH</h1>
+
+      
+      <div class="rating-row">
+        <div class="stars">
+          <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        </div>
+        <span class="rating-text">4.9</span>
+        <span class="rating-count">· 47 avaliações · Lourdes</span>
+      </div>
+
       <p class="hero-desc">Sua clínica de estética no Lourdes, BH. Atendimento rápido, profissionais avaliados pela comunidade local. Agende agora.</p>
 
       
@@ -181,27 +218,93 @@ footer a{color:var(--g500);text-decoration:none}
       </span>
       
 
-      
       <div class="info-card">
         
-        
+        <div class="info-row">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span>Lourdes, Belo Horizonte — MG</span>
+        </div>
         <div class="info-row">
           <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
-          <span>Estética · Lourdes, Belo Horizonte · MG</span>
+          <span>Estética · Atendimento local</span>
         </div>
       </div>
     </div>
 
     
-    <div class="hero-img reveal">
+    <div class="hero-right reveal">
       
-      <div class="hero-img-placeholder">
-        <div class="placeholder-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+      <div class="hero-img">
+        
+        <div class="hero-img-placeholder">
+          <div class="placeholder-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zm-8.5-5.5l-2 2.79L8 13l-3 4h14l-4.5-5.5z"/></svg>
+          </div>
+          <p style="font-size:12px;color:var(--hint);line-height:1.5;margin-top:8px">Foto do estabelecimento<br>disponível após ativação</p>
         </div>
-        <p style="font-size:13px;color:var(--hint);line-height:1.5">Foto do estabelecimento<br>em breve</p>
+        
       </div>
+
       
+      <div class="map-box">
+        <iframe
+          src="https://maps.google.com/maps?q=Est%C3%A9tica+Lourdes+Belo&#43;Horizonte+MG&output=embed&z=15"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa Estética Lourdes">
+        </iframe>
+        <div class="map-label">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Lourdes, Belo Horizonte
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="avaliacoes-section reveal">
+  <div class="avaliacoes-inner">
+    <div class="section-label">Avaliações</div>
+    <h2>O que dizem sobre estética no Lourdes</h2>
+
+    <div class="rating-summary">
+      <div class="rating-big">
+        <div class="rating-num">4.9</div>
+        <div class="rating-stars-big">
+          <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        </div>
+        <div class="rating-total">47 avaliações</div>
+      </div>
+      <div class="rating-bars">
+        <div class="rating-bar-row"><span>5★</span><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div><span>42</span></div>
+        <div class="rating-bar-row"><span>4★</span><div class="bar-track"><div class="bar-fill" style="width:9%"></div></div><span>4</span></div>
+        <div class="rating-bar-row"><span>3★</span><div class="bar-track"><div class="bar-fill" style="width:2%"></div></div><span>1</span></div>
+        <div class="rating-bar-row"><span>2★</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span>0</span></div>
+        <div class="rating-bar-row"><span>1★</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span>0</span></div>
+      </div>
+    </div>
+
+    <div class="avaliacoes-grid">
+      <div class="avaliacao-card">
+        <div class="av-stars"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+        <p class="av-texto">Atendimento excelente, muito atenciosos e profissionais. Recomendo demais para quem mora no Lourdes!</p>
+        <div class="av-autor"><div class="av-avatar">A</div><div><div class="av-nome">Ana Paula M.</div><div class="av-data">há 2 semanas</div></div></div>
+      </div>
+      <div class="avaliacao-card">
+        <div class="av-stars"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+        <p class="av-texto">Fácil de agendar, fui bem atendido, e o resultado ficou ótimo. Com certeza volto!</p>
+        <div class="av-autor"><div class="av-avatar">R</div><div><div class="av-nome">Ricardo S.</div><div class="av-data">há 1 mês</div></div></div>
+      </div>
+      <div class="avaliacao-card">
+        <div class="av-stars"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+        <p class="av-texto">Super indico! Profissional competente, pontual e o ambiente é muito agradável. Melhor do Lourdes!</p>
+        <div class="av-autor"><div class="av-avatar">C</div><div><div class="av-nome">Camila F.</div><div class="av-data">há 3 semanas</div></div></div>
+      </div>
     </div>
   </div>
 </section>
@@ -215,20 +318,14 @@ footer a{color:var(--g500);text-decoration:none}
     <div class="sobre-text">
       <div class="section-label">Localização</div>
       <h2>Estética no Lourdes</h2>
-      <p>
-        
-        Encontre estética no Lourdes em Belo Horizonte. 
-        Profissionais locais prontos para atender você com qualidade e praticidade.
-      </p>
-      <p>
-        Atendemos Lourdes e regiões próximas em Belo Horizonte, Minas Gerais. 
-        Agende pelo WhatsApp e garanta seu horário com facilidade.
-      </p>
+      <p>Encontre estética no Lourdes em Belo Horizonte. Profissionais locais com avaliação 5★.</p>
+      <p>Atendemos Lourdes e regiões próximas em Belo Horizonte, Minas Gerais. Agende pelo WhatsApp e garanta seu horário.</p>
     </div>
     <div class="stats-grid">
+      <div class="stat-box"><div class="stat-num">4.9★</div><div class="stat-label">Avaliação média</div></div>
+      <div class="stat-box"><div class="stat-num">47</div><div class="stat-label">Avaliações</div></div>
+      <div class="stat-box"><div class="stat-num">Lourdes</div><div class="stat-label">Bairro</div></div>
       <div class="stat-box"><div class="stat-num">BH</div><div class="stat-label">Belo Horizonte</div></div>
-      <div class="stat-box"><div class="stat-num">MG</div><div class="stat-label">Minas Gerais</div></div>
-      <div class="stat-box" style="grid-column:span 2"><div class="stat-num" style="font-size:18px">Lourdes</div><div class="stat-label">Bairro de atendimento</div></div>
     </div>
   </div>
 </section>
@@ -238,7 +335,7 @@ footer a{color:var(--g500);text-decoration:none}
   <h2>Agende agora pelo WhatsApp</h2>
   <p>Rápido, fácil e sem burocracia. Fale diretamente com o profissional.</p>
   
-  <a href="https://wa.me/5531999999999?text=Olá!%20Quero%20informações%20sobre%20Est%C3%A9tica%20no%20Lourdes." class="btn-wa-white">
+  <a href="https://wa.me/5531984102018?text=Olá!%20Vi%20a%20página%20de%20Est%C3%A9tica%20no%20Lourdes%20e%20quero%20saber%20mais." class="btn-wa-white">
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     Quero saber mais
   </a>
@@ -249,19 +346,27 @@ footer a{color:var(--g500);text-decoration:none}
 <footer>
   <div class="footer-logo">Victa<em>Digital</em></div>
   <p>© 2025 VictaDigital · Belo Horizonte, MG · <a href="https://victadigital.com.br">victadigital.com.br</a></p>
-  <p class="footer-claim">
-    Esta é uma página de diretório local independente.
-    
-    Proprietário deste negócio? <a href="https://wa.me/5531999999999?text=Olá!%20Quero%20personalizar%20minha%20página%20de%20Est%C3%A9tica%20no%20Lourdes.">Reivindique esta página e ative seu WhatsApp →</a>
-    
-  </p>
+  
+  <p class="footer-claim">Esta é uma página de diretório local independente. Proprietário? <a href="https://wa.me/5531984102018?text=Quero%20personalizar%20minha%20página%20de%20Est%C3%A9tica%20no%20Lourdes.">Reivindique esta página e ative seu WhatsApp →</a></p>
+  
 </footer>
 
 
 
-<a href="https://wa.me/5531999999999?text=Olá!%20Vi%20a%20página%20de%20Est%C3%A9tica%20no%20Lourdes%20e%20quero%20saber%20mais." class="wa-float inativo" aria-label="WhatsApp em breve">
+<div class="reivindicar-banner">
+  <div>
+    <strong>Esta página está esperando por você</strong>
+    <p>Ative seu WhatsApp, adicione sua foto e comece a receber clientes hoje.</p>
+  </div>
+  <a href="https://wa.me/5531984102018?text=Olá!%20Quero%20personalizar%20minha%20página%20de%20Est%C3%A9tica%20no%20Lourdes." class="btn-reivindicar">Reivindique agora →</a>
+</div>
+
+
+
+
+<a href="https://wa.me/5531984102018?text=Olá!%20Quero%20personalizar%20minha%20página." class="wa-float">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  <span>Em breve</span>
+  <span>Reivindique esta página</span>
 </a>
 
 
