@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -90,7 +90,7 @@ h1 span{color:var(--g500)}
 .map-label{position:absolute;bottom:10px;left:10px;background:var(--white);border:1px solid var(--border);border-radius:8px;padding:6px 12px;font-size:12px;font-weight:600;color:var(--g700);display:flex;align-items:center;gap:6px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
 .map-label svg{width:14px;height:14px;fill:var(--g500)}
 
-/* AVALIA├ç├òES */
+/* AVALIAÇÕES */
 .avaliacoes-section{background:var(--g050);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:48px 32px}
 .avaliacoes-inner{max-width:960px;margin:0 auto}
 .section-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--g500);margin-bottom:8px}
@@ -117,7 +117,7 @@ h2{font-size:clamp(20px,3vw,30px);font-weight:700;letter-spacing:-.02em;color:va
 .bar-track{flex:1;height:6px;background:var(--g100);border-radius:3px;overflow:hidden}
 .bar-fill{height:100%;background:var(--g400);border-radius:3px}
 
-/* SERVI├çOS */
+/* SERVIÇOS */
 .servicos-section{padding:48px 32px}
 .servicos-inner{max-width:960px;margin:0 auto}
 .servicos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
@@ -205,7 +205,7 @@ footer a{color:var(--g500);text-decoration:none}
     Falar agora
   </a>
   {{ else }}
-  <a href="https://wa.me/5531984102018?text=Ol├í!%20Quero%20personalizar%20minha%20p├ígina%20de%20{{ .Params.servico | urlquery }}%20no%20{{ .Params.bairro | urlquery }}." class="nav-cta">
+  <a href="https://wa.me/5531984102018?text=Olá!%20Quero%20personalizar%20minha%20página%20de%20{{ .Params.servico | urlquery }}%20no%20{{ .Params.bairro | urlquery }}." class="nav-cta">
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     Saiba mais
   </a>
@@ -216,7 +216,7 @@ footer a{color:var(--g500);text-decoration:none}
 <section>
   <div class="hero">
     <div>
-      <div class="hero-badge"><span class="dot"></span>{{ .Params.servico }} ┬À {{ .Params.bairro }}</div>
+      <div class="hero-badge"><span class="dot"></span>{{ .Params.servico }} · {{ .Params.bairro }}</div>
       <h1>{{ .Params.title | replaceRE "Belo Horizonte" "<span>Belo Horizonte</span>" | replaceRE "Contagem" "<span>Contagem</span>" | safeHTML }}</h1>
 
       <!-- ESTRELAS -->
@@ -229,7 +229,7 @@ footer a{color:var(--g500);text-decoration:none}
           <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         </div>
         <span class="rating-text">4.9</span>
-        <span class="rating-count">┬À 47 avalia├º├Áes ┬À {{ .Params.bairro }}</span>
+        <span class="rating-count">· 47 avaliações · {{ .Params.bairro }}</span>
       </div>
 
       <p class="hero-desc">{{ .Params.meta_description }}</p>
@@ -250,16 +250,16 @@ footer a{color:var(--g500);text-decoration:none}
         {{ if .Params.endereco }}
         <div class="info-row">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          <span>{{ .Params.endereco }} ÔÇö {{ .Params.bairro }}, {{ .Params.cidade }}</span>
+          <span>{{ .Params.endereco }} · {{ .Params.bairro }}, {{ .Params.cidade }}</span>
         </div>
         {{ end }}
         <div class="info-row">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          <span>{{ .Params.bairro }}, {{ .Params.cidade }} ÔÇö MG</span>
+          <span>{{ .Params.bairro }}, {{ .Params.cidade }} · MG</span>
         </div>
         <div class="info-row">
           <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
-          <span>{{ .Params.servico }} ┬À Atendimento local</span>
+          <span>{{ .Params.servico }} · Atendimento local</span>
         </div>
       </div>
     </div>
@@ -275,7 +275,7 @@ footer a{color:var(--g500);text-decoration:none}
           <div class="placeholder-icon">
             <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zm-8.5-5.5l-2 2.79L8 13l-3 4h14l-4.5-5.5z"/></svg>
           </div>
-          <p style="font-size:12px;color:var(--hint);line-height:1.5;margin-top:8px">Foto do estabelecimento<br>dispon├¡vel ap├│s ativa├º├úo</p>
+          <p style="font-size:12px;color:var(--hint);line-height:1.5;margin-top:8px">Foto do estabelecimento<br>disponível ap├│s ativaç├úo</p>
         </div>
         {{ end }}
       </div>
@@ -297,10 +297,10 @@ footer a{color:var(--g500);text-decoration:none}
   </div>
 </section>
 
-<!-- AVALIA├ç├òES -->
+<!-- AVALIAÇÕES -->
 <section class="avaliacoes-section reveal">
   <div class="avaliacoes-inner">
-    <div class="section-label">Avalia├º├Áes</div>
+    <div class="section-label">Avaliaçães</div>
     <h2>O que dizem sobre {{ .Params.servico | lower }} no {{ .Params.bairro }}</h2>
 
     <div class="rating-summary">
@@ -313,7 +313,7 @@ footer a{color:var(--g500);text-decoration:none}
           <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         </div>
-        <div class="rating-total">47 avalia├º├Áes</div>
+        <div class="rating-total">47 avaliaçães</div>
       </div>
       <div class="rating-bars">
         <div class="rating-bar-row"><span>5Ôÿà</span><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div><span>42</span></div>
@@ -333,23 +333,23 @@ footer a{color:var(--g500);text-decoration:none}
       <div class="avaliacao-card">
         <div class="av-stars"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
         <p class="av-texto">F├ícil de agendar, fui bem atendido, e o resultado ficou ├│timo. Com certeza volto!</p>
-        <div class="av-autor"><div class="av-avatar">R</div><div><div class="av-nome">Ricardo S.</div><div class="av-data">h├í 1 m├¬s</div></div></div>
+        <div class="av-autor"><div class="av-avatar">R</div><div><div class="av-nome">Ricardo S.</div><div class="av-data">h├í 1 mês</div></div></div>
       </div>
       <div class="avaliacao-card">
         <div class="av-stars"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
-        <p class="av-texto">Super indico! Profissional competente, pontual e o ambiente ├® muito agrad├ível. Melhor do {{ .Params.bairro }}!</p>
+        <p class="av-texto">Super indico! Profissional competente, pontual e o ambiente é muito agrad├ível. Melhor do {{ .Params.bairro }}!</p>
         <div class="av-autor"><div class="av-avatar">C</div><div><div class="av-nome">Camila F.</div><div class="av-data">h├í 3 semanas</div></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SERVI├çOS -->
+<!-- SERVIÇOS -->
 {{ if .Params.servicos_lista }}
 <section class="servicos-section reveal">
   <div class="servicos-inner">
     <div class="section-label">O que oferecemos</div>
-    <h2>Servi├ºos dispon├¡veis</h2>
+    <h2>Serviços disponíveis</h2>
     <div class="servicos-grid">
       {{ range split .Params.servicos_lista "," }}
       <div class="servico-item">{{ . | strings.TrimSpace }}</div>
@@ -363,14 +363,14 @@ footer a{color:var(--g500);text-decoration:none}
 <section class="sobre-section reveal">
   <div class="sobre-inner">
     <div class="sobre-text">
-      <div class="section-label">Localiza├º├úo</div>
+      <div class="section-label">Localizaç├úo</div>
       <h2>{{ .Params.servico }} no {{ .Params.bairro }}</h2>
-      <p>{{ if .Params.nome_cliente }}{{ .Params.nome_cliente }} atende no {{ .Params.bairro }}, em {{ .Params.cidade }}.{{ else }}Encontre {{ .Params.servico | lower }} no {{ .Params.bairro }} em {{ .Params.cidade }}. Profissionais locais com avalia├º├úo 5Ôÿà.{{ end }}</p>
-      <p>Atendemos {{ .Params.bairro }} e regi├Áes pr├│ximas em {{ .Params.cidade }}, Minas Gerais. Agende pelo WhatsApp e garanta seu hor├írio.</p>
+      <p>{{ if .Params.nome_cliente }}{{ .Params.nome_cliente }} atende no {{ .Params.bairro }}, em {{ .Params.cidade }}.{{ else }}Encontre {{ .Params.servico | lower }} no {{ .Params.bairro }} em {{ .Params.cidade }}. Profissionais locais com avaliaç├úo 5Ôÿà.{{ end }}</p>
+      <p>Atendemos {{ .Params.bairro }} e regiães pr├│ximas em {{ .Params.cidade }}, Minas Gerais. Agende pelo WhatsApp e garanta seu hor├írio.</p>
     </div>
     <div class="stats-grid">
-      <div class="stat-box"><div class="stat-num">4.9Ôÿà</div><div class="stat-label">Avalia├º├úo m├®dia</div></div>
-      <div class="stat-box"><div class="stat-num">47</div><div class="stat-label">Avalia├º├Áes</div></div>
+      <div class="stat-box"><div class="stat-num">4.9Ôÿà</div><div class="stat-label">Avaliaç├úo média</div></div>
+      <div class="stat-box"><div class="stat-num">47</div><div class="stat-label">Avaliaçães</div></div>
       <div class="stat-box"><div class="stat-num">{{ .Params.bairro }}</div><div class="stat-label">Bairro</div></div>
       <div class="stat-box"><div class="stat-num">BH</div><div class="stat-label">{{ .Params.cidade }}</div></div>
     </div>
@@ -387,7 +387,7 @@ footer a{color:var(--g500);text-decoration:none}
     {{ .Params.cta_text }}
   </a>
   {{ else }}
-  <a href="https://wa.me/5531984102018?text=Ol├í!%20Vi%20a%20p├ígina%20de%20{{ .Params.servico | urlquery }}%20no%20{{ .Params.bairro | urlquery }}%20e%20quero%20saber%20mais." class="btn-wa-white">
+  <a href="https://wa.me/5531984102018?text=Olá!%20Vi%20a%20página%20de%20{{ .Params.servico | urlquery }}%20no%20{{ .Params.bairro | urlquery }}%20e%20quero%20saber%20mais." class="btn-wa-white">
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     Quero saber mais
   </a>
@@ -397,9 +397,9 @@ footer a{color:var(--g500);text-decoration:none}
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">Victa<em>Digital</em></div>
-  <p>┬® 2025 VictaDigital ┬À Belo Horizonte, MG ┬À <a href="https://victadigital.com.br">victadigital.com.br</a></p>
+  <p>┬® 2025 VictaDigital · Belo Horizonte, MG · <a href="https://victadigital.com.br">victadigital.com.br</a></p>
   {{ if not .Params.whatsapp }}
-  <p class="footer-claim">Esta ├® uma p├ígina de diret├│rio local independente. Propriet├írio? <a href="https://wa.me/5531984102018?text=Quero%20personalizar%20minha%20p├ígina%20de%20{{ .Params.servico | urlquery }}%20no%20{{ .Params.bairro | urlquery }}.">Reivindique esta p├ígina e ative seu WhatsApp ÔåÆ</a></p>
+  <p class="footer-claim">Esta é uma página de diret├│rio local independente. Propriet├írio? <a href="https://wa.me/5531984102018?text=Quero%20personalizar%20minha%20página%20de%20{{ .Params.servico | urlquery }}%20no%20{{ .Params.bairro | urlquery }}.">Reivindique esta página e ative seu WhatsApp ÔåÆ</a></p>
   {{ end }}
 </footer>
 
@@ -407,10 +407,10 @@ footer a{color:var(--g500);text-decoration:none}
 {{ if not .Params.whatsapp }}
 <div class="reivindicar-banner">
   <div>
-    <strong>Esta p├ígina est├í esperando por voc├¬</strong>
+    <strong>Esta página est├í esperando por você</strong>
     <p>Ative seu WhatsApp, adicione sua foto e comece a receber clientes hoje.</p>
   </div>
-  <a href="https://wa.me/5531984102018?text=Ol├í!%20Quero%20personalizar%20minha%20p├ígina%20de%20{{ .Params.servico | urlquery }}%20no%20{{ .Params.bairro | urlquery }}." class="btn-reivindicar">Reivindique agora ÔåÆ</a>
+  <a href="https://wa.me/5531984102018?text=Olá!%20Quero%20personalizar%20minha%20página%20de%20{{ .Params.servico | urlquery }}%20no%20{{ .Params.bairro | urlquery }}." class="btn-reivindicar">Reivindique agora ÔåÆ</a>
 </div>
 {{ end }}
 
@@ -421,9 +421,9 @@ footer a{color:var(--g500);text-decoration:none}
   <span>{{ .Params.cta_text }}</span>
 </a>
 {{ else }}
-<a href="https://wa.me/5531984102018?text=Ol├í!%20Quero%20personalizar%20minha%20p├ígina." class="wa-float">
+<a href="https://wa.me/5531984102018?text=Olá!%20Quero%20personalizar%20minha%20página." class="wa-float">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  <span>Reivindique esta p├ígina</span>
+  <span>Reivindique esta página</span>
 </a>
 {{ end }}
 
@@ -433,3 +433,5 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
 </body>
 </html>
+
+
