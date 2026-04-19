@@ -8,3 +8,4 @@ meta_description: Seu salão de beleza em Cidade Jardim, BH. Atendimento rápido
 cta_text: Agendar horário pelo WhatsApp
 type: pseo
 ---
+

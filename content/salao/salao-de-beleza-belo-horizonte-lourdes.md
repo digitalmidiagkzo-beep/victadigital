@@ -8,3 +8,4 @@ meta_description: Seu salão de beleza no Lourdes, BH. Atendimento rápido, prof
 cta_text: Agendar horário pelo WhatsApp
 type: pseo
 ---
+

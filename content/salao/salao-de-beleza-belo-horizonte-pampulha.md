@@ -8,3 +8,4 @@ meta_description: Seu salão de beleza na Pampulha, BH. Atendimento rápido, pro
 cta_text: Agendar horário pelo WhatsApp
 type: pseo
 ---
+

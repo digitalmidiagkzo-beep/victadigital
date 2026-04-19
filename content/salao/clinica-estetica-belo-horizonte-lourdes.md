@@ -8,3 +8,4 @@ meta_description: Sua clínica de estética no Lourdes, BH. Atendimento rápido,
 cta_text: Agendar horário pelo WhatsApp
 type: pseo
 ---
+

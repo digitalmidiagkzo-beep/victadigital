@@ -8,3 +8,4 @@ meta_description: Seu salão de beleza no Serra, BH. Atendimento rápido, profis
 cta_text: Agendar horário pelo WhatsApp
 type: pseo
 ---
+

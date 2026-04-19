@@ -8,3 +8,4 @@ meta_description: Seu salão de beleza no Eldorado, Contagem. Atendimento rápid
 cta_text: Agendar horário pelo WhatsApp
 type: pseo
 ---
+

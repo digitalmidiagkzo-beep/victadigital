@@ -8,3 +8,4 @@ meta_description: Seu salão de beleza no Savassi, BH. Atendimento rápido, prof
 cta_text: Agendar horário pelo WhatsApp
 type: pseo
 ---
+

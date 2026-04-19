@@ -8,3 +8,4 @@ meta_description: Seu salão de beleza no Belvedere, BH. Atendimento rápido, pr
 cta_text: Agendar horário pelo WhatsApp
 type: pseo
 ---
+
