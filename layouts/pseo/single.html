@@ -90,12 +90,12 @@ h1 span{color:var(--g500)}
 .map-label{position:absolute;bottom:10px;left:10px;background:var(--white);border:1px solid var(--border);border-radius:8px;padding:6px 12px;font-size:12px;font-weight:600;color:var(--g700);display:flex;align-items:center;gap:6px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
 .map-label svg{width:14px;height:14px;fill:var(--g500)}
 
-/* AVALIAÇÕES */
-.AVALIAÇÕES-section{background:var(--g050);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:48px 32px}
-.AVALIAÇÕES-inner{max-width:960px;margin:0 auto}
+/* Avaliações */
+.Avaliações-section{background:var(--g050);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:48px 32px}
+.Avaliações-inner{max-width:960px;margin:0 auto}
 .section-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--g500);margin-bottom:8px}
 h2{font-size:clamp(20px,3vw,30px);font-weight:700;letter-spacing:-.02em;color:var(--g900);margin-bottom:24px}
-.AVALIAÇÕES-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.Avaliações-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
 .avaliacao-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:20px}
 .av-stars{display:flex;gap:2px;margin-bottom:8px}
 .av-stars svg{width:14px;height:14px;fill:#f59e0b}
@@ -117,7 +117,7 @@ h2{font-size:clamp(20px,3vw,30px);font-weight:700;letter-spacing:-.02em;color:va
 .bar-track{flex:1;height:6px;background:var(--g100);border-radius:3px;overflow:hidden}
 .bar-fill{height:100%;background:var(--g400);border-radius:3px}
 
-/* SERVIÇOS */
+/* SERVI├çOS */
 .servicos-section{padding:48px 32px}
 .servicos-inner{max-width:960px;margin:0 auto}
 .servicos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
@@ -171,14 +171,14 @@ footer a{color:var(--g500);text-decoration:none}
   .hero-right{order:2}
   .hero > div:first-child{order:1}
   .map-box{height:160px}
-  .AVALIAÇÕES-section,.servicos-section,.sobre-section,.cta-banner{padding:40px 16px}
+  .Avaliações-section,.servicos-section,.sobre-section,.cta-banner{padding:40px 16px}
   .sobre-inner{grid-template-columns:1fr}
   .rating-summary{flex-direction:column;text-align:center}
   footer{padding:20px 16px;flex-direction:column;text-align:center}
   .wa-float span{display:none}
   .wa-float{padding:14px}
   .reivindicar-banner{flex-direction:column;text-align:center;padding:16px}
-  .AVALIAÇÕES-grid{grid-template-columns:1fr}
+  .Avaliações-grid{grid-template-columns:1fr}
   .stats-grid{grid-template-columns:1fr 1fr}
 }
 </style>
@@ -229,7 +229,7 @@ footer a{color:var(--g500);text-decoration:none}
           <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         </div>
         <span class="rating-text">4.9</span>
-        <span class="rating-count">· 47 AVALIAÇÕES · {{ .Params.bairro }}</span>
+        <span class="rating-count">· 47 Avaliações · {{ .Params.bairro }}</span>
       </div>
 
       <p class="hero-desc">{{ .Params.meta_description }}</p>
@@ -269,7 +269,17 @@ footer a{color:var(--g500);text-decoration:none}
       <!-- FOTO -->
       <div class="hero-img">
         {{ if .Params.foto_cliente }}
-        <img src="/clientes/{{ .Params.foto_cliente }}" alt="{{ .Params.nome_cliente | default .Params.servico }} no {{ .Params.bairro }}" loading="lazy">
+        {{ $fotos := split .Params.foto_cliente "," }}
+        {{ if gt (len $fotos) 1 }}
+        <div class="carousel" id="car" style="position:relative;overflow:hidden;border-radius:12px">
+          {{ range $i, $f := $fotos }}<div class="cs{{ if eq $i 0 }} on{{ end }}" style="display:{{ if eq $i 0 }}block{{ else }}none{{ end }}"><img src="/clientes/{{ strings.TrimSpace $f }}" alt="{{ $.Params.nome_cliente }} {{ $.Params.bairro }}" style="width:100%;aspect-ratio:4/3;object-fit:cover" loading="{{ if eq $i 0 }}eager{{ else }}lazy{{ end }}"></div>{{ end }}
+          <button onclick="cm(-1)" style="position:absolute;left:8px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.9);border:none;width:32px;height:32px;border-radius:50%;font-size:20px;cursor:pointer">‹</button>
+          <button onclick="cm(1)" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.9);border:none;width:32px;height:32px;border-radius:50%;font-size:20px;cursor:pointer">›</button>
+        </div>
+        <script>var ci=0;function cm(d){var s=document.querySelectorAll(".cs");s[ci].style.display="none";ci=(ci+d+s.length)%s.length;s[ci].style.display="block"}</script>
+        {{ else }}
+        <img src="/clientes/{{ strings.TrimSpace (index $fotos 0) }}" alt="{{ .Params.nome_cliente }} {{ .Params.bairro }}" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px" loading="lazy">
+        {{ end }}
         {{ else }}
         <div class="hero-img-placeholder">
           <div class="placeholder-icon">
@@ -297,10 +307,10 @@ footer a{color:var(--g500);text-decoration:none}
   </div>
 </section>
 
-<!-- AVALIAÇÕES -->
-<section class="AVALIAÇÕES-section reveal">
-  <div class="AVALIAÇÕES-inner">
-    <div class="section-label">AVALIAÇÕES</div>
+<!-- Avaliações -->
+<section class="Avaliações-section reveal">
+  <div class="Avaliações-inner">
+    <div class="section-label">Avaliações</div>
     <h2>O que dizem sobre {{ .Params.servico | lower }} no {{ .Params.bairro }}</h2>
 
     <div class="rating-summary">
@@ -313,7 +323,7 @@ footer a{color:var(--g500);text-decoration:none}
           <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         </div>
-        <div class="rating-total">47 AVALIAÇÕES</div>
+        <div class="rating-total">47 Avaliações</div>
       </div>
       <div class="rating-bars">
         <div class="rating-bar-row"><span>5★</span><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div><span>42</span></div>
@@ -324,7 +334,7 @@ footer a{color:var(--g500);text-decoration:none}
       </div>
     </div>
 
-    <div class="AVALIAÇÕES-grid">
+    <div class="Avaliações-grid">
       <div class="avaliacao-card">
         <div class="av-stars"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
         <p class="av-texto">Atendimento excelente, muito atenciosos e profissionais. Recomendo demais para quem mora no {{ .Params.bairro }}!</p>
@@ -344,7 +354,7 @@ footer a{color:var(--g500);text-decoration:none}
   </div>
 </section>
 
-<!-- SERVIÇOS -->
+<!-- SERVI├çOS -->
 {{ if .Params.servicos_lista }}
 <section class="servicos-section reveal">
   <div class="servicos-inner">
@@ -370,7 +380,7 @@ footer a{color:var(--g500);text-decoration:none}
     </div>
     <div class="stats-grid">
       <div class="stat-box"><div class="stat-num">4.9★</div><div class="stat-label">Avaliação média</div></div>
-      <div class="stat-box"><div class="stat-num">47</div><div class="stat-label">AVALIAÇÕES</div></div>
+      <div class="stat-box"><div class="stat-num">47</div><div class="stat-label">Avaliações</div></div>
       <div class="stat-box"><div class="stat-num">{{ .Params.bairro }}</div><div class="stat-label">Bairro</div></div>
       <div class="stat-box"><div class="stat-num">BH</div><div class="stat-label">{{ .Params.cidade }}</div></div>
     </div>
@@ -433,11 +443,3 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
