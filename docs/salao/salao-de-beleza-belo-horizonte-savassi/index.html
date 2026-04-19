@@ -58,7 +58,6 @@ h1 span{color:var(--g500)}
 .info-row svg{width:16px;height:16px;fill:var(--g500);flex-shrink:0;margin-top:2px}
 .info-row span{color:var(--muted)}
 .hero-right{display:flex;flex-direction:column;gap:16px}
-
  
 .car-box{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/3;background:var(--g100)}
 .car-slide{display:none;width:100%;height:100%}
@@ -69,7 +68,6 @@ h1 span{color:var(--g500)}
 .car-dots{display:flex;justify-content:center;gap:6px;margin-top:8px}
 .car-dot{width:7px;height:7px;border-radius:50%;background:var(--g200);border:none;cursor:pointer;padding:0}
 .car-dot.on{background:var(--g500)}
-
  
 .loc-card{background:var(--g050);border:1px solid var(--border);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:12px}
 .loc-title{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--g500)}
@@ -77,7 +75,6 @@ h1 span{color:var(--g500)}
 .loc-address svg{width:16px;height:16px;fill:var(--g500);flex-shrink:0;margin-top:2px}
 .loc-btn{display:inline-flex;align-items:center;gap:8px;background:var(--g800);color:var(--white);padding:10px 18px;border-radius:50px;font-size:13px;font-weight:600;text-decoration:none;width:fit-content}
 .loc-btn svg{width:14px;height:14px;fill:currentColor}
-
  
 .av-section{background:var(--g050);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:48px 32px}
 .av-inner{max-width:960px;margin:0 auto}
@@ -102,14 +99,12 @@ h2{font-size:clamp(20px,3vw,30px);font-weight:700;letter-spacing:-.02em;color:va
 .bar-row{display:flex;align-items:center;gap:8px;margin-bottom:4px;font-size:12px;color:var(--muted)}
 .bar-track{flex:1;height:6px;background:var(--g100);border-radius:3px;overflow:hidden}
 .bar-fill{height:100%;background:var(--g400);border-radius:3px}
-
  
 .sv-section{padding:48px 32px}
 .sv-inner{max-width:960px;margin:0 auto}
 .sv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
 .sv-item{background:var(--g050);border:1px solid var(--border);border-radius:10px;padding:14px 16px;font-size:13px;font-weight:600;color:var(--g700);display:flex;align-items:center;gap:8px}
 .sv-item::before{content:'';width:7px;height:7px;background:var(--g400);border-radius:50%;flex-shrink:0}
-
  
 .sobre-section{background:var(--g050);border-top:1px solid var(--border);padding:48px 32px}
 .sobre-inner{max-width:960px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
@@ -118,42 +113,48 @@ h2{font-size:clamp(20px,3vw,30px);font-weight:700;letter-spacing:-.02em;color:va
 .stat-box{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:18px;text-align:center}
 .stat-num{font-size:26px;font-weight:700;color:var(--g500);line-height:1}
 .stat-label{font-size:11px;color:var(--hint);margin-top:4px}
-
+ 
+.geo-section{padding:40px 32px;border-top:1px solid var(--border)}
+.geo-inner{max-width:960px;margin:0 auto}
+.geo-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.geo-tag{background:var(--g050);border:1px solid var(--border);border-radius:50px;padding:6px 14px;font-size:12px;color:var(--muted);font-weight:500}
+ 
+.outros-section{padding:40px 32px;background:var(--g050);border-top:1px solid var(--border)}
+.outros-inner{max-width:960px;margin:0 auto}
+.outros-grid{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.outro-link{display:inline-flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:12px 18px;font-size:13px;font-weight:600;color:var(--g700);text-decoration:none;transition:border-color .2s}
+.outro-link:hover{border-color:var(--g400);color:var(--g500)}
+.outro-link svg{width:14px;height:14px;fill:var(--g400)}
  
 .cta-banner{background:var(--g900);padding:56px 32px;text-align:center}
 .cta-banner h2{color:var(--white);font-size:clamp(20px,3vw,32px);margin-bottom:10px}
 .cta-banner p{color:var(--g200);font-size:14px;margin-bottom:28px}
 .btn-wa-white{display:inline-flex;align-items:center;gap:10px;background:var(--white);color:var(--g900);padding:16px 32px;border-radius:50px;font-size:15px;font-weight:700;text-decoration:none}
 .btn-wa-white svg{width:20px;height:20px;fill:currentColor}
-
 footer{padding:28px 32px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
 .footer-logo{font-size:14px;font-weight:700;color:var(--g900)}
 .footer-logo em{color:var(--g500);font-style:normal}
 footer p{font-size:11px;color:var(--hint)}
 footer a{color:var(--g500);text-decoration:none}
-
 .wa-float{position:fixed;bottom:24px;right:24px;z-index:200;display:flex;align-items:center;gap:10px;background:#25d366;color:white;padding:14px 20px;border-radius:50px;font-size:14px;font-weight:600;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.4)}
 .wa-float svg{width:20px;height:20px;fill:currentColor;flex-shrink:0}
-
-.reivindicar-banner{background:linear-gradient(135deg,#1a3d28,#0a1f12);padding:20px 32px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.reivindicar-banner p{font-size:13px;color:var(--g200)}
-.reivindicar-banner strong{color:var(--white);display:block;font-size:15px;margin-bottom:2px}
-.btn-reivindicar{background:var(--white);color:var(--g900);padding:10px 22px;border-radius:50px;font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap;flex-shrink:0}
-
+.reiv-banner{background:linear-gradient(135deg,#1a3d28,#0a1f12);padding:20px 32px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.reiv-banner p{font-size:13px;color:var(--g200)}
+.reiv-banner strong{color:var(--white);display:block;font-size:15px;margin-bottom:2px}
+.btn-reiv{background:var(--white);color:var(--g900);padding:10px 22px;border-radius:50px;font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap;flex-shrink:0}
 .placeholder-box{width:100%;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--g100),var(--g050));border-radius:16px;flex-direction:column;gap:10px;padding:24px;text-align:center}
 .placeholder-box svg{width:40px;height:40px;fill:var(--g400)}
 .placeholder-box p{font-size:12px;color:var(--hint);line-height:1.5}
-
 @media(max-width:768px){
   nav{padding:0 16px}
   .hero{grid-template-columns:1fr;padding:80px 16px 40px;gap:20px}
-  .av-section,.sv-section,.sobre-section,.cta-banner{padding:40px 16px}
+  .av-section,.sv-section,.sobre-section,.cta-banner,.geo-section,.outros-section{padding:40px 16px}
   .sobre-inner{grid-template-columns:1fr}
   .rating-summary{flex-direction:column;text-align:center}
   footer{padding:20px 16px;flex-direction:column;text-align:center}
   .wa-float span{display:none}
   .wa-float{padding:14px}
-  .reivindicar-banner{flex-direction:column;text-align:center;padding:16px}
+  .reiv-banner{flex-direction:column;text-align:center;padding:16px}
 }
 </style>
 </head>
@@ -162,7 +163,7 @@ footer a{color:var(--g500);text-decoration:none}
 <nav>
   <a href="https://victadigital.com.br" class="nav-logo">Victa<em>Digital</em></a>
   
-  <a href="https://wa.me/5531984102018?text=OlÃ¡!%20Quero%20saber%20mais." class="nav-cta">
+  <a href="https://wa.me/5531984102018" class="nav-cta">
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     Saiba mais
   </a>
@@ -172,7 +173,7 @@ footer a{color:var(--g500);text-decoration:none}
 <section>
   <div class="hero">
     <div>
-      <div class="hero-badge"><span class="dot"></span>Salão de Beleza Â· Savassi</div>
+      <div class="hero-badge"><span class="dot"></span>Salão de Beleza · Savassi</div>
       <h1>Salão de Beleza no Savassi BH</h1>
       <div class="rating-row">
         <div class="stars">
@@ -183,7 +184,7 @@ footer a{color:var(--g500);text-decoration:none}
           <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         </div>
         <span class="rating-text">4.9</span>
-        <span class="rating-count">Â· 47 AvaliaÃ§Ãµes Â· Savassi</span>
+        <span class="rating-count">· 47 Avaliações · Savassi</span>
       </div>
       <p class="hero-desc">Seu salão de beleza no Savassi, BH. Atendimento rápido, profissionais avaliados pela comunidade local. Agende agora.</p>
       
@@ -195,11 +196,11 @@ footer a{color:var(--g500);text-decoration:none}
       <div class="info-card">
         <div class="info-row">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          <span>Savassi, Belo Horizonte Â· MG</span>
+          <span>Savassi, Belo Horizonte · MG</span>
         </div>
         <div class="info-row">
           <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
-          <span>Salão de Beleza Â· Atendimento local</span>
+          <span>Salão de Beleza · Atendimento local</span>
         </div>
       </div>
     </div>
@@ -208,15 +209,15 @@ footer a{color:var(--g500);text-decoration:none}
       
       <div class="placeholder-box">
         <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zm-8.5-5.5l-2 2.79L8 13l-3 4h14l-4.5-5.5z"/></svg>
-        <p>Foto disponivel apos ativacao</p>
+        <p>Foto disponível após ativação</p>
       </div>
       
 
       <div class="loc-card">
-        <div class="loc-title">LOCALIZAÇÃO</div>
+        <div class="loc-title">📍 Localização</div>
         <div class="loc-address">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          <span>Savassi, Belo Horizonte MG</span>
+          <span>Savassi, Belo Horizonte · MG</span>
         </div>
         <a href="https://maps.google.com/?q=Sal%C3%A3o&#43;de&#43;Beleza+Savassi+Belo&#43;Horizonte+MG" target="_blank" rel="noopener" class="loc-btn">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
@@ -229,7 +230,7 @@ footer a{color:var(--g500);text-decoration:none}
 
 <section class="av-section">
   <div class="av-inner">
-    <div class="section-label">AVALIAÇÕES</div>
+    <div class="section-label">Avaliações</div>
     <h2>O que dizem sobre salão de beleza no Savassi</h2>
     <div class="rating-summary">
       <div class="rating-big">
@@ -241,14 +242,14 @@ footer a{color:var(--g500);text-decoration:none}
           <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         </div>
-        <div class="rating-total">47 AVALIAÇÕES</div>
+        <div class="rating-total">47 avaliações</div>
       </div>
       <div class="rating-bars">
-        <div class="bar-row"><span>5â˜…</span><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div><span>42</span></div>
-        <div class="bar-row"><span>4â˜…</span><div class="bar-track"><div class="bar-fill" style="width:9%"></div></div><span>4</span></div>
-        <div class="bar-row"><span>3â˜…</span><div class="bar-track"><div class="bar-fill" style="width:2%"></div></div><span>1</span></div>
-        <div class="bar-row"><span>2â˜…</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span>0</span></div>
-        <div class="bar-row"><span>1â˜…</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span>0</span></div>
+        <div class="bar-row"><span>5★</span><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div><span>42</span></div>
+        <div class="bar-row"><span>4★</span><div class="bar-track"><div class="bar-fill" style="width:9%"></div></div><span>4</span></div>
+        <div class="bar-row"><span>3★</span><div class="bar-track"><div class="bar-fill" style="width:2%"></div></div><span>1</span></div>
+        <div class="bar-row"><span>2★</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span>0</span></div>
+        <div class="bar-row"><span>1★</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span>0</span></div>
       </div>
     </div>
     <div class="av-grid">
@@ -264,7 +265,7 @@ footer a{color:var(--g500);text-decoration:none}
       </div>
       <div class="av-card">
         <div class="av-stars"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
-        <p class="av-texto">Super indico! Profissional competente, pontual e o ambiente e muito agradável. Melhor do Savassi!</p>
+        <p class="av-texto">Super indico! Profissional competente, pontual e o ambiente é muito agradável. Melhor do Savassi!</p>
         <div class="av-autor"><div class="av-avatar">C</div><div><div class="av-nome">Camila F.</div><div class="av-data">há 3 semanas</div></div></div>
       </div>
     </div>
@@ -276,19 +277,23 @@ footer a{color:var(--g500);text-decoration:none}
 <section class="sobre-section">
   <div class="sobre-inner">
     <div class="sobre-text">
-      <div class="section-label">LOCALIZAÇÃO</div>
+      <div class="section-label">Localização</div>
       <h2>Salão de Beleza no Savassi</h2>
       <p>Encontre salão de beleza no Savassi em Belo Horizonte.</p>
       <p>Atendemos Savassi e regiões próximas em Belo Horizonte, Minas Gerais. Agende pelo WhatsApp e garanta seu horário.</p>
     </div>
     <div class="stats-grid">
-      <div class="stat-box"><div class="stat-num">4.9â˜…</div><div class="stat-label">Avaliação média</div></div>
-      <div class="stat-box"><div class="stat-num">47</div><div class="stat-label">AVALIAÇÕES</div></div>
+      <div class="stat-box"><div class="stat-num">4.9★</div><div class="stat-label">Avaliação média</div></div>
+      <div class="stat-box"><div class="stat-num">47</div><div class="stat-label">Avaliações</div></div>
       <div class="stat-box"><div class="stat-num">Savassi</div><div class="stat-label">Bairro</div></div>
       <div class="stat-box"><div class="stat-num">MG</div><div class="stat-label">Belo Horizonte</div></div>
     </div>
   </div>
 </section>
+
+
+
+
 
 <section class="cta-banner">
   <h2>Agende agora pelo WhatsApp</h2>
@@ -303,23 +308,23 @@ footer a{color:var(--g500);text-decoration:none}
 
 <footer>
   <div class="footer-logo">Victa<em>Digital</em></div>
-  <p>Â© 2025 VictaDigital Â· Belo Horizonte, MG Â· <a href="https://victadigital.com.br">victadigital.com.br</a></p>
+  <p>© 2025 VictaDigital · Belo Horizonte, MG · <a href="https://victadigital.com.br">victadigital.com.br</a></p>
 </footer>
 
 
-<div class="reivindicar-banner">
+<div class="reiv-banner">
   <div>
-    <strong>Esta pagina esta esperando por voce</strong>
+    <strong>Esta página está esperando por você</strong>
     <p>Ative seu WhatsApp e comece a receber clientes hoje.</p>
   </div>
-  <a href="https://wa.me/5531984102018" class="btn-reivindicar">Reivindique agora</a>
+  <a href="https://wa.me/5531984102018" class="btn-reiv">Reivindique agora →</a>
 </div>
 
 
 
 <a href="https://wa.me/5531984102018" class="wa-float">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  <span>Reivindique esta pagina</span>
+  <span>Reivindique esta página</span>
 </a>
 
 
@@ -330,4 +335,3 @@ function cg(i){var s=document.querySelectorAll('.car-slide'),dt=document.querySe
 </script>
 </body>
 </html>
-
