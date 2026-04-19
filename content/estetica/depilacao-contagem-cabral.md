@@ -10,7 +10,10 @@ nome_cliente: Studio Fick Leve
 whatsapp: 11965918109
 foto_cliente: fick-leve-1.jpg,fick-leve-2.jpg,fick-leve-3.jpg,fick-leve-4.jpg,fick-leve-5.jpg,fick-leve-6.jpg
 servicos_lista: Depilação completa,Depilação a laser,Buço,Axila,Virilha,Perna completa
+bairros_vizinhos: Cabral, Nacional, Arpoador, Ressaca, Jardim Laguna
 type: pseo
+
+
 ---
 
 
